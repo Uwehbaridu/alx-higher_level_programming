@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+# Check if PYCODE environment variable is set
+if [ -z "$SPYCODE' ]; then
+	echo "PYCODE environement variable is not set. Please set it to the python code you want to run
+exit 1
+fi
+
+#Run the python code
+python -c "$SPYCODE"
