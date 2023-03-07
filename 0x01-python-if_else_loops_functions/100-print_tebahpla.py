@@ -1,3 +1,6 @@
 #!/usr/bin/python3
-or i in range(122, 96, -1):
-    print("{0}{1}".format(chr(i), chr(i-32) if i % 2 == 0 else ""), end="")
+
+i = 0
+for c in range(ord('z'), ord('a') - 1, -1):
+    print("{}".format(chr(c - i)), end="")
+    i = 32 if i == 0 else 0
